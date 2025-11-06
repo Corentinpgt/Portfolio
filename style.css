@@ -39,6 +39,53 @@
     position: fixed;
     left: 15%;
     top: 10%;
+    max-width: 30rem;
+}
+
+.profile:hover {
+    cursor: crosshair;
+}
+
+.profile img {
+    width: 100%;
+    aspect-ratio: 10/4;
+    object-fit: cover;
+    border-radius: 1rem;
+    animation: circleGlow 10s ease-in-out infinite;
+}
+
+
+@keyframes circleGlow {
+    0% {
+        box-shadow: 0 -20px 60px -30px rgba(255, 180, 130, 0.25),
+                    0 0 40px -20px rgba(255, 255, 255, 0.1);
+        filter: brightness(1);
+    }
+    20% {
+        box-shadow: -20px -10px 70px -30px rgba(255, 130, 130, 0.3),
+                    0 0 50px -25px rgba(255, 255, 255, 0.15);
+        filter: brightness(1.05);
+    }
+    40% {
+        box-shadow: -20px 10px 80px -30px rgba(150, 180, 255, 0.35),
+                    0 0 60px -25px rgba(255, 255, 255, 0.2);
+        filter: brightness(1.1);
+    }
+    60% {
+        box-shadow: 0 20px 70px -30px rgba(255, 200, 150, 0.35),
+                    0 0 50px -25px rgba(255, 255, 255, 0.15);
+        filter: brightness(1.05);
+    }
+    80% {
+        box-shadow: 20px 0 60px -30px rgba(255, 200, 255, 0.3),
+                    0 0 40px -20px rgba(255, 255, 255, 0.1);
+        filter: brightness(1.02);
+    }
+    100% {
+        box-shadow: 0 -20px 60px -30px rgba(255, 180, 130, 0.25),
+                    0 0 40px -20px rgba(255, 255, 255, 0.1);
+        filter: brightness(1);
+    }
 }
 
 .profile h1 {
@@ -47,7 +94,7 @@
 
 .profile h2 {
     margin-top: .5rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .profile p {
@@ -103,7 +150,14 @@ main .exp {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+    transition: scale .3s ease-in-out;
+}
+
+.project:hover {
+    cursor: pointer;
+    scale: 1.01;
+    backdrop-filter: blur(25px);
 }
 
 .project img {

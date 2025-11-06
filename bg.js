@@ -29,7 +29,7 @@ function randomBreath() {
   selected.forEach(cell => {
     if (cell.classList.contains('breathe')) return;
 
-    const duration = 3 + Math.random() * 3;
+    const duration = 3 + Math.random() * 5;
     cell.style.animationDuration = `${duration}s`;
     cell.classList.add('breathe');
 

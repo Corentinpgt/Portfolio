@@ -13,9 +13,10 @@
     </div>
 
     <section class="profile">
+        <img src="assets/wallpaper.jpg" alt="Bannière">
         <h1>Corentin Pouget</h1>
         <h2>Développeur Full Stack, spécialisé Backend</h2>
-        <p>Développeur Web de 20 ans.<br>Diplômé d'un BUT Métiers du Multimédia et de l'Internet.<br>Ouvert au travail. Découvrez mon profil.</p>
+        <p>Diplômé d'un BUT Métiers du Multimédia et de l'Internet.<br>20 ans. Ouvert au travail.<br>Découvrez mon profil.</p>
     </section>
 
     <section class="socials">
@@ -50,29 +51,30 @@
     <main>
         <section class="about">
             <h2>À propos</h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur nam tenetur, enim perferendis ea labore possimus recusandae itaque! Velit magni aut ut fuga quisquam voluptatum, consequatur quas facilis mollitia dignissimos quis nihil possimus.</p>
+            <p class="text">J'aime découvrir et apprendre de nouvelles choses, qu'elles soient liées ou non au développement web. Pour en citer quelques-unes : le tennis, le violon, les échecs. Récemment je me suis pris de passion pour le storytelling, alors je travaile sur la façon de raconter les histoires qui me plaisent.</p>
         </section>
 
         <section class="exp">
             <h2>Expériences</h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur nam tenetur, enim perferendis ea labore possimus recusandae itaque! Velit magni aut ut fuga quisquam voluptatum, consequatur quas facilis mollitia dignissimos quis nihil possimus.</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo pariatur nam tenetur, enim perferendis ea labore possimus recusandae itaque! Velit magni aut ut fuga quisquam voluptatum, consequatur quas facilis mollitia dignissimos quis nihil possimus.</p>
+            <p class="text">J'ai passé 3 ans à étudier une grande variété de domaines du web. Principalement le développement, qu'il soit front ou back (HTML/CSS/JS/PHP, SQL, Symfony, Docker, React, TailwindCSS, NextJS), le tout en prenant en compte les aspects UI/UX. Cependant, là où mon profil se distingue, c'est que j'ai également appris et travaillé des choses comme le montage vidéo (et stop-motion), la retouche photo, le storytelling et la veille informatique. Si ces compétences ne sont pas toujours directement utiles dans le développement, elles m’offrent une vision plus large et une réelle capacité à apprendre et à m’adapter.</p>
+            <p class="text">Ma 3ᵉ année d'études s'est déroulée en alternance au sein d'<a style="text-decoration: underline;" href="https://www.lamargueriteasso.fr">une association.</a> Ma mission était de développer une plateforme interne de gestion, que je détaille <a style="text-decoration: underline;" href="#myspace">un peu plus bas.</a> Durant la totalité du projet, j'ai travaillé seul : mon supérieur et moi discutions des choses à implémenter, puis je me mettais au travail. Une fois le code/la fonctionnalité implémenté(e), elle était validée par mon supérieur. En cas de problèmes majeurs dépassant mes capacités, je pouvais compter sur l'aide d'une développeuse senior externe à l'association. Cette expérience long terme, quasi professionnelle, m'a permis de me développer comme jamais auparavant. Je me devais d'être autonome tout en restant à l'écoute des besoins de mes collègues.</p>
         </section>
 
         <section class="projects">
             <h2>Réalisations</h2>
-            <div class="project">
+            <a href="https://github.com/Corentinpgt/Plateform-Nextjs" target="_blank" class="project">
                 <img src="assets/projects/plateform-cover.jpeg" alt="Image de couverture">
                 <section>
                     <h3>Plateform</h3>
                     <p class="dates">28 Oct 2025 - Aujourd'hui (en cours)</p>
                 </section>
                 <p class="description">
-                    Plateform est un réseau social codé avec NextJS et utilisant Supabase. C'est un projet non commercial, développé dans le but d'améliorer mes compétences (NextJS, logiques React, composants async) et d'apprendres de nouvelles choses (discussions en temps réel, algorythme de recommandations etc.).
+                    Plateform est un réseau social codé avec NextJS et utilisant Supabase. C'est un projet non commercial, développé dans le but d'améliorer mes compétences (NextJS, logique React, composants async) et d'apprendre de nouvelles choses (discussions en temps réel, algorythme de recommandation etc.).
                 </p>
-            </div>
+                <div style="margin-top: -1rem;" id="myspace"></div>
+            </a>
 
-            <div class="project">
+            <a class="project">
                 <img src="assets/projects/myspace-cover.png" alt="Image de couverture">
                 <section>
                     <h3>MySpace - La Marguerite</h3>
@@ -80,9 +82,20 @@
                 </section>
                 <p class="description">
                     La Marguerite est une association de patients atteints de maladies chroniques, proposant des accompagnements.<br> <br>
-                    MySpace est une plateforme interne développée avec Symfony, tournant sur docker. C'est une application à plusieures vues, permetant de gérer des ateliers, des listes/fiches de patients, des entretiens/rdv etc. Implémentaton d'un agenda partagé, d'un systeme de notifications interne.
+                    MySpace est une plateforme interne que j'ai créé durant mon alternance, développée avec Symfony et tournant sur docker. C'est une application à plusieures vues, permettant de gérer des ateliers, des listes/fiches de patients, des entretiens/rdv etc. Implémentaton d'un agenda (FullCalendarJS) partagé et d'un systeme de notifications interne.
                 </p>
-            </div>
+            </a>
+
+            <a href="https://github.com/Corentinpgt/SAE-501-Groupe-C/tree/Rendu-Final" target="_blank" class="project">
+                <img src="assets/projects/lagendary-cover.png" alt="Image de couverture">
+                <section>
+                    <h3>L'agendary</h3>
+                    <p class="dates">07 Oct 2024 - 15 Dec 2024</p>
+                </section>
+                <p class="description">
+                    L'agendary est une application de gestion d'événements conçue sur Docker avec un front en NextJS/Shadcn, et un back en Symfony (utilisé comme api). C'était un projet que j'ai réalisé en 3e année de mon BUT en équipe de 5. Elle comprend une page d'accueil, de profil, un agenda privé, ainsi qu'une interface d'administration.
+                </p>
+            </a>
         </section>
     </main>
 
