@@ -1,0 +1,130 @@
+.bg {
+    position: fixed;
+    top: -1px;
+    left: -1px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    width: calc(100vw + 2px);
+    height: calc(100vh + 2px);
+    z-index: 0;
+}
+  
+
+.bg-cell {
+    background-color: #030712;
+    outline: 1px solid #1c0f36;
+    box-sizing: border-box;
+    aspect-ratio: 1/1;
+    transition: background-color 0.3s ease;
+}
+
+.bg-cell:hover {
+    scale: 1.1;
+    border-radius: .125rem;
+    transition: none;
+    background-color: #1c0f36;
+}
+
+@keyframes breathe {
+    0%   { background-color: #030712; }
+    50%  { background-color: #1c0f36; } /* teinte chaude/grise */
+    100% { background-color: #030712; }
+}
+
+.breathe {
+    animation: breathe 4s ease-in-out;
+}
+
+.profile {
+    position: fixed;
+    left: 15%;
+    top: 10%;
+}
+
+.profile h1 {
+    font-size: 4rem;
+}
+
+.profile h2 {
+    margin-top: .5rem;
+    font-size: 1.25rem;
+}
+
+.profile p {
+    margin-top: 1rem;
+    color: #969696;
+}
+
+/* .profile nav {
+    height: 10rem;
+    width: 10rem;
+    background-color: grey;
+} */
+
+.socials {
+    position: fixed;
+    bottom: 10%;
+    left: 15%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+main {
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    width: 30%;
+}
+
+main h2 {
+    margin-top: 1rem;
+}
+
+main .text {
+    margin: 1rem 0 2rem;
+    color: #969696;
+}
+
+main .about,
+main .exp {
+    margin-bottom: 5rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project img {
+    aspect-ratio: 16/9;
+    border-radius: .5rem;
+}
+
+.project section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.project h3 {
+    font-size: 1.25rem;
+}
+
+.project .dates {
+}
+
+.project .description {
+    color: #969696;
+}

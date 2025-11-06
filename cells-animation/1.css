@@ -1,0 +1,12 @@
+.bg-cell {
+    animation: breathe 6s ease-in-out infinite;
+}
+
+@keyframes breathe {
+    0%   { background-color: #1A191D; }
+    20%  { background-color: #262428; }  /* un peu plus clair */
+    40%  { background-color: #2B2420; }  /* nuance chaude orangée */
+    60%  { background-color: #262428; }  /* un peu plus clair */
+    80%  { background-color: #1E2430; }  /* nuance froide bleutée */
+    100% { background-color: #1A191D; }
+}
