@@ -37,7 +37,7 @@
 
 .profile {
     position: fixed;
-    left: 15%;
+    left: 12.5%;
     top: 10%;
     max-width: 30rem;
 }
@@ -111,17 +111,30 @@
 .socials {
     position: fixed;
     bottom: 10%;
-    left: 15%;
+    left: 12.5%;
     display: flex;
     align-items: center;
     gap: 2rem;
 }
 
+.socials a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    border-radius: 5rem;
+}
+
+.socials a:hover {
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, .3);
+
+}
+
 main {
     position: absolute;
-    right: 15%;
+    right: 12.5%;
     top: 10%;
-    width: 30%;
+    width: 35%;
 }
 
 main h2 {
@@ -136,6 +149,92 @@ main .text {
 main .about,
 main .exp {
     margin-bottom: 5rem;
+}
+
+.technos {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+}
+
+.technos section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+
+.techno {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .5rem;
+    width: 100%;
+    border-radius: .25rem;
+    background-color: #1A191D;
+    border: 1px solid #1A191D;
+}
+
+.techno:hover {
+    border: 1px dashed #373639;
+}
+
+.techno img {
+    padding: .5rem;
+    width: 3rem;
+    aspect-ratio: 1;
+    object-fit: contain;
+    border-radius: .25rem;
+}
+
+.techno div h3 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.techno div p {
+    font-size: .8rem;
+}
+
+.techno.figma img {
+    background-color: rgba(10, 207, 131, .1);
+}
+
+.techno.supabase img {
+    background-color: rgba(10, 207, 131, .1);
+}
+
+.techno.github img {
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.techno.docker img {
+    padding: 0.25rem;
+    background-color: rgba(49, 120, 198, .1);
+}
+
+.techno.symfony img {
+    padding: 0;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.techno.next img {
+    padding: .25rem;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.techno.tailwind img {
+    background-color: rgba(49, 120, 198, .1);
+}
+
+.techno.trello img {
+    background-color: rgba(49, 120, 198, .1);
+}
+
+.techno.hostinger img {
+    background-color: rgba(103, 71, 199, .2);
 }
 
 .projects {

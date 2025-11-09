@@ -9,14 +9,14 @@ function createGrid() {
     bg.style.gridTemplateRows = `repeat(${rows}, ${cellSize}px)`;
     
     for (let i = 0; i < cols * rows; i++) {
-    const cell = document.createElement('div');
-    cell.className = 'bg-cell';
-    bg.appendChild(cell);
+      const cell = document.createElement('div');
+      cell.className = 'bg-cell';
+      bg.appendChild(cell);
     }
 }
 
 createGrid();
-window.addEventListener('resize', createGrid);
+window.addEventListener('resize', createGridAndBreath);
 
 // JS
 const cells = Array.from(document.querySelectorAll('.bg-cell'));
@@ -41,3 +41,21 @@ function randomBreath() {
 }
 
 setInterval(randomBreath, 2000);
+
+
+function createGridAndBreath() {
+  bg.innerHTML = '';
+  const cols = Math.ceil(window.innerWidth / cellSize);
+  const rows = Math.ceil(window.innerHeight / cellSize);
+  bg.style.gridTemplateColumns = `repeat(${cols}, ${cellSize}px)`;
+  bg.style.gridTemplateRows = `repeat(${rows}, ${cellSize}px)`;
+  
+  for (let i = 0; i < cols * rows; i++) {
+    const cell = document.createElement('div');
+    cell.className = 'bg-cell';
+    bg.appendChild(cell);
+  }
+
+  setInterval(randomBreath, 2000);
+
+}
